@@ -1,6 +1,4 @@
-# Command to run: docker-compose up
-
-version: '2'
+version: '3'
 
 services:
   hello-world-run:
@@ -11,6 +9,6 @@ services:
       - .:/go/src/app
     working_dir: /go/src/app
     ports:
-      - "3030:3001"
+      - "3001:3001"
     environment:
       PORT: 3001
