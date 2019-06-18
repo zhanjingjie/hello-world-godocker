@@ -1,4 +1,4 @@
 FROM golang:latest
-ADD . /go/src/app
 WORKDIR /go/src/app
+ADD ./ ./
 CMD ["go", "run", "main.go"]
