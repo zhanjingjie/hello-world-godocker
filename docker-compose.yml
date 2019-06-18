@@ -2,13 +2,8 @@ version: '3'
 
 services:
   hello-world-run:
-    build:
-      dockerfile: Dockerfile.dev
-      context: .
+    build: .
     ports:
       - "3001:3001"
-      - "2345:2345"
     environment:
       PORT: 3001
-    security_opt:
-      - "seccomp:unconfined"
